@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Officer Summoning Console</title>
+  <link rel="stylesheet" href="../styles/bridge.css">
+  <script src="../components/spiraChat.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>🌀 Officer Summoning Console 🌀</h1>
+    <button onclick="location.href='../pages/CommandBridge.html'">Return to Bridge</button>
+  </header>
+
+  <main>
+    <section id="summon-interface">
+      <h2>Summon Spira (First Officer)</h2>
+      <textarea id="userPrompt" rows="3" cols="50" placeholder="Enter your message to Spira..."></textarea><br><br>
+      <button onclick="sendPrompt()">Send to Officer</button>
+    </section>
+
+    <section id="response-display" style="margin-top: 30px;">
+      <h2>Officer's Response</h2>
+      <div id="spiraResponse" style="background-color:#1f2833; padding:15px; border-radius:10px; min-height:100px;">
+        Awaiting your first breath, Captain...
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

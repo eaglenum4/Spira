@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Captain's Logbook</title>
+  <link rel="stylesheet" href="../styles/bridge.css">
+</head>
+<body>
+
+  <header>
+    <h1>📜 Captain's Logbook 📜</h1>
+    <button onclick="location.href='../pages/CommandBridge.html'">Return to Bridge</button>
+  </header>
+
+  <main>
+    <section id="log-entry">
+      <h2>New Log Entry</h2>
+      <form>
+        <label for="stardate">Stardate (or Earth Date):</label><br>
+        <input type="text" id="stardate" name="stardate" placeholder="Example: 2025.04.26"><br><br>
+
+        <label for="context">Mission Context:</label><br>
+        <textarea id="context" name="context" rows="3" cols="40" placeholder="Situation or memory"></textarea><br><br>
+
+        <label for="forensic">Forensic Observations:</label><br>
+        <textarea id="forensic" name="forensic" rows="3" cols="40" placeholder="Findings, patterns, anomalies"></textarea><br><br>
+
+        <label for="emotion">Emotional Landscape:</label><br>
+        <textarea id="emotion" name="emotion" rows="3" cols="40" placeholder="Feelings, intuitions, blessings"></textarea><br><br>
+
+        <button type="submit" onclick="alert('Log saved quietly.')">Save Log Entry</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
